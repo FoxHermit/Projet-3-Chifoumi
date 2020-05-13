@@ -1,0 +1,18 @@
+body{
+  background-image: url(../img/b1dac0470bdf2f7cc0c559599fba19f9.jpg);
+}
+.buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+#button2{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+h1{
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+}
