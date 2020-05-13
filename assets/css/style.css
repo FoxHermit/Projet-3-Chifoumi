@@ -11,8 +11,27 @@ body{
   margin-left: 10%;
   margin-right: 10%;
 }
+@font-face{
+  font-family: hpunk;
+  src: url('fonts/hpunk.ttf');
+}
 h1{
   text-align: center;
   color: white;
-  font-size: 3rem;
+  font-size: 5rem;
+  font-family: hpunk;
+}
+p{
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+.startscreen{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#playbutton{
+  margin-left: 45%;
+  margin-right: 45%;
 }

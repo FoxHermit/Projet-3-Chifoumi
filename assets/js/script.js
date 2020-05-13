@@ -1,3 +1,9 @@
 $(function(){
-
+  $(document).ready(function(){
+    $('.buttons').hide();
+  });
+  $(document).click(function(){
+    $('.startscreen').fadeOut('slow');
+    $('.buttons').fadeIn('fast');
+  });
 });
