@@ -7,27 +7,36 @@
   <link rel="stylesheet" href="assets/img/">
 </head>
 <body>
+
 <h1>CHIFOUMI</h1>
-<div class="startscreen">
-  <p>Appuie sur les boutons Pierre, Feuille et Ciseaux pour jouer.</p>
-  <button type="button" name="button" id="playbutton">Jouer !</button>
+
+
+<div id="startScreen">
+           <p>Appuie sur les boutons Pierre, Feuille et Ciseaux pour jouer.</p>
+          <button type="button" name="button" id="playButton">Jouer !</button>        <!--/*//    bouton d'acceuil qui accède au jeu  //*/-->
 </div>
 
 
 
+<container id="choices">
+  <div id="buttons">          <!-- /*// concerne les 3 boutons : feuille / pierre / ciseaux //*/ -->
 
-<div class="buttons">
-  <input type="image" id="button1" alt="Pierre" src="assets/img/nature/pierre.svg">
-  <input type="image" id="button2" alt="Feuille" src="assets/img/feuille.png">
-  <input type="image" id="button3" alt="Ciseaux" src="assets/img/ciseaux.png">
+  <button type="image" id="rock" class="go" alt="pierre" value="0">           <!--/*//   bouton pierre, ID = rock donc  #rock     //*/-->
+  <button type="image" id="paper" class="go" alt="feuille" value="1">      <!-- /*//    bouton feuille, ID = paper donc #paper   //*/-->
+  <button type="image" id="scissors" class="go" alt="ciseaux" value="2">     <!-- /*//    bouton feuille, ID = scissors donc #scissors   //*/-->
+
 </div>
+</container>
 
 
 
 
 
 
-  <script src="assets/js/jquery.js"></script>
-  <script src="assets/js/script.js"></script>
+
+
+
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/script4.js"></script>
 </body>
 </html>

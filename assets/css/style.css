@@ -1,37 +1,109 @@
 body{
-  background-image: url(../img/b1dac0470bdf2f7cc0c559599fba19f9.jpg);
+  background-image: url(../img/background.jpg);
 }
-.buttons{
+
+
+
+
+
+/*//////// SECTION TYPOGRAPHIE, STYLE, EN RAPPORT AVEC DU TEXTE //////////*/
+
+
+
+
+@font-face{
+    font-family: hpunk;
+    src: url('fonts/hpunk.ttf');
+  }
+
+  h1{
+    text-align: center;
+    color: white;
+    font-size: 5rem;
+    font-family: hpunk;
+    letter-spacing: 200%;
+  }
+
+  p{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+  }
+
+
+
+
+
+  /* /////// SECTION BOUTONS //////////*/
+
+
+
+
+  #playButton{           /*//    bouton d'acceuil qui accède au jeu  //*/
+    margin-left: 45%;
+    margin-right: 45%;
+  }
+
+
+
+
+#buttons{                /*// concerne les 3 boutons : feuille / pierre / ciseaux //*/
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
 }
-#button2{
-  margin-left: 10%;
-  margin-right: 10%;
+
+
+
+#rock{                   /*//   bouton pierre, ID = rock donc  #rock     //*/
+  background-image: url(../img/nature/pierre.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  border: grey 3px solid;
 }
-@font-face{
-  font-family: hpunk;
-  src: url('fonts/hpunk.ttf');
+
+
+
+#paper{            /*//    bouton feuille, ID = paper donc #paper   //*/
+  background-image: url(../img/nature/feuille.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 150px;
+  height: 150px;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 20px;
+  border: grey 3px solid;
 }
-h1{
-  text-align: center;
-  color: white;
-  font-size: 5rem;
-  font-family: hpunk;
+
+
+
+#scissors{        /*//    bouton feuille, ID = scissors donc #scissors   //*/
+  background-image: url(../img/nature/ciseaux.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  border: grey 3px solid;
 }
-p{
-  text-align: center;
-  color: white;
-  font-size: 2rem;
-}
-.startscreen{
+
+
+
+
+#startScreen{
   display:flex;
   flex-direction: column;
   justify-content: center;
 }
-#playbutton{
-  margin-left: 45%;
-  margin-right: 45%;
-}
+
+
+
+
+/*// BOUTONS
+
+  -re-dimentionner  les boutons -
+  - repoisitionner pour un fondu correct -
